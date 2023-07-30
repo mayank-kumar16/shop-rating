@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>shop rating system</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--stlesheet-->
+    <link rel="stylesheet" href="css/rating.css">
+</head>
+<body>
+    
+	<div class="main-container">
+		<!--rating state start-->
+		<div class="rating-container">
+			<div class="rating-box">
+			  <span class="icn" id="icon-face"><i class="fa-solid fa-face-grin-hearts"></i></span>
+			  <h1>Would you write us a review?</h1>
+			  <p>Your feedback is important to us and helps us to improve. it only takes a minute !</p>
+			  <div class="btn-holder">
+				 <ul>
+					 <li><button class="btn">1</button></li>
+					 <li><button class="btn">2</button></li>
+					 <li><button class="btn">3</button></li>
+					 <li><button class="btn">4</button></li>
+					 <li><button class="btn">5</button></li>
+				 </ul>
+			  </div>
+			  <button class="submit-btn" id="submit_rating">submit</button>
+			</div>
+		 </div>
+		 <!--rating state end-->
+	 
+		 <div class="result-container hidden visuallyhidden">
+			<div class="result-in">
+                <span class="icn" id="final-smily"><i class="fa-solid fa-face-smile"></i></span>
+				<h5>you rated <span id="rate-value">5</span> out of <span>5</span></h5>
+				<h1>Thanks for your feedback</h1>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, repellendus?</p>
+				<button class="submit-btn" id="back_rating">rate again</button>
+			</div>
+		 </div>
+	</div>
+    
+    <!--scripts-->
+    <script src="js/rating.js"></script>
+</body>
+</html>
